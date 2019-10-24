@@ -35,7 +35,7 @@ yarn start (or npm start)
 
 Use ./simple_document_viewer.postman_collection.json
 
-##Image Sample
+## Image Sample
 
 ![image](./static/screenshot/screen_shot_2019-10-24.PNG)
 
