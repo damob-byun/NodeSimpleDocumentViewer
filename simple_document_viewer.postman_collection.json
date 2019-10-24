@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "0d7ced74-79f9-4b77-81e4-c675eeb1561a",
+		"name": "simple_document_viewer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "preview",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/C:/Users/BJS-LAPTOP/Downloads/반도체설계산업기사 출제기준.hwp"
+						}
+					]
+				},
+				"url": "http://192.168.10.133:8080/api/upload/preview"
+			},
+			"response": []
+		},
+		{
+			"name": "link_preview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.10.133:8080/api/link/preview?url=http://www.ti.com/lit/ds/slvs044x/slvs044x.pdf",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"133"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"link",
+						"preview"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "http://www.ti.com/lit/ds/slvs044x/slvs044x.pdf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pdf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/C:/Users/BJS-LAPTOP/Documents/모스_소개서(세무사회_190906).pptx"
+						}
+					]
+				},
+				"url": "http://192.168.10.133:8080/api/upload/preview/file"
+			},
+			"response": []
+		},
+		{
+			"name": "link to get file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.10.133:8080/api/link/preview/file?url=http://www.ti.com/lit/ds/slvs044x/slvs044x.pdf",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"133"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"link",
+						"preview",
+						"file"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "http://www.ti.com/lit/ds/slvs044x/slvs044x.pdf"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
