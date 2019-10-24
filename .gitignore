@@ -4,4 +4,4 @@ node_modules
 dist
 *.log
 yarn.lock
-package.json
+package-lock.json

@@ -1,11 +1,12 @@
 # Simple Document Viewer
 
-This is a Simple Document Viewer with Uniconv, pyhwp
-<br>Used <b>Express, React</b>
+This is a Simple Document Viewer with Uniconv, pyhwp<br>
+Used <b>Express, React</b><br>
+All of uploaded file delete every 30 minuites 
 ## Requirements
 [unoconv](http://dag.wiee.rs/home-made/unoconv/) is required, which requires LibreOffice (or OpenOffice.)<br>
 [pihwp](https://github.com/mete0r/pyhwp) is required<br>
-If you want to use Docker click [this article]().(TODO)
+If you want to use Docker click this (TODO)
 ## Quick Start
 
 ```bash
@@ -34,5 +35,7 @@ yarn start (or npm start)
 
 Use ./simple_document_viewer.postman_collection.json
 
-##Image
+##Image Sample
+
+![image](./static/screenshot/screen_shot_2019-10-24.PNG)
 
