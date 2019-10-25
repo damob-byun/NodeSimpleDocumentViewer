@@ -6,7 +6,7 @@ All of uploaded file delete every 30 minuites
 ## Requirements
 [unoconv](http://dag.wiee.rs/home-made/unoconv/) is required, which requires LibreOffice (or OpenOffice.)<br>
 [pihwp](https://github.com/mete0r/pyhwp) is required<br>
-If you want to use Docker click this (TODO)
+If you want to use Docker click [Docker-NodeSimpleDocumentViewer](https://github.com/always-awaken/Docker-NodeSimpleDocumentViewer)
 ## Quick Start
 
 ```bash
@@ -37,5 +37,5 @@ Use ./simple_document_viewer.postman_collection.json
 
 ## Image Sample
 
-![image](./static/screenshot/screen_shot_2019-10-24.PNG)
+![image](./static/uploads/screen_shot_2019-10-24.PNG)
 

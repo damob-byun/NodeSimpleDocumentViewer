@@ -29,7 +29,7 @@ setInterval(
       }, this);
     });
   },
-  1000 * 60 * 30, //30분마다 1시간지난파일 삭제
+  1000 * 60 * (process.env.TEMPFILE_DELETE_INTERVAL_MINUITE || 30), //30분마다 1시간지난파일 삭제
 );
 app.post('/api/upload/preview/', multer.upload.any(), async (req, res) => {
   let files = req.files;
@@ -105,6 +105,6 @@ app.get('/api/link/preview/file', async (req, res) => {
     '/uploads/' + util.getRemovedExtension(file_name) + '.pdf';
   res.redirect(redirect_url);
 });
-app.listen(process.env.PORT || 8080, () =>
+app.listen(process.env.SERVER_PORT || 8080, () =>
   console.log(`Listening on port ${process.env.PORT || 8080}!`),
 );

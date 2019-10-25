@@ -21,7 +21,7 @@ module.exports = (function() {
   });
   M.upload = multer({
     storage,
-    limits: { fileSize: 1024 * 1024 * 50 }, //50mb
+    limits: { fileSize: 1024 * 1024 * (process.env.UPLOAD_MAX_SIZE || 50) }, //50mb
     fileFilter: function(req, file, cb) {
       if (_.find(document, { extension: file.originalname.split('.').pop() })) {
            cb(null, true);
