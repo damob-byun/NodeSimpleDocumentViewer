@@ -19,6 +19,10 @@ apt-get install libreoffice-writer libreoffice-calc
 pip install lxml
 pip install --user --pre pyhwp
 
+#git clone
+git clone https://github.com/always-awaken/NodeSimpleDocumentViewer.git document_viewer
+cd document_viewer
+
 # Install dependencies
 yarn (or npm install)
 
@@ -33,7 +37,8 @@ yarn start (or npm start)
 ```
 ## Postman
 
-Use ./simple_document_viewer.postman_collection.json
+use [PostMan](https://www.getpostman.com/)
+import ./simple_document_viewer.postman_collection.json
 
 ## Image Sample
 
