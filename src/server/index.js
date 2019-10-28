@@ -4,7 +4,7 @@ const multer = require('./multer');
 const app = express();
 const doc2pdf = require('./doc2pdf');
 const fs = require('fs');
-
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 const util = require('./util');
 app.use(express.static(path.join(__dirname, '../../static')));
 app.use(express.static(path.join(__dirname, '../../dist')));

@@ -11,7 +11,7 @@ module.exports = (function() {
       .join('.');
   };
   U.downloadFile = async (url, path) => {
-    const res = await fetch(url);
+    const res = await fetch(encodeURI(url));
     const fileStream = fs.createWriteStream(path);
     await new Promise((resolve, reject) => {
       res.body.pipe(fileStream);
